@@ -19,6 +19,6 @@ class Item (val name:String, val weight:Double){
     }
 
     fun getInformation(index: Int): String{
-        return "$index $name $(weight)lb $$price"
+        return "$index $name ($weight)lb $$price"
     }
 }
