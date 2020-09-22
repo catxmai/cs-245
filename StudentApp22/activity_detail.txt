@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/profile_img"
+        android:layout_width="222dp"
+        android:layout_height="226dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/male" />
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="331dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="36dp"
+        android:text="Name"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_img" />
+
+    <TextView
+        android:id="@+id/phone_text"
+        android:layout_width="329dp"
+        android:layout_height="37dp"
+        android:text="xxx-xxx-xxxx"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/name_text"
+        app:layout_constraintTop_toBottomOf="@+id/name_text" />
+
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="328dp"
+        android:layout_height="40dp"
+        android:text="Email"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/phone_text"
+        app:layout_constraintTop_toBottomOf="@+id/phone_text" />
+
+    <TextView
+        android:id="@+id/address_text"
+        android:layout_width="289dp"
+        android:layout_height="150dp"
+        android:singleLine="false"
+        android:text="Address"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/email_text"
+        app:layout_constraintTop_toBottomOf="@+id/email_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>
