@@ -1,0 +1,26 @@
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/cs_button"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="CS"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/math_button"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Math"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/chemistry_button"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Chemistry"
+            android:textSize="25dp" />
+    </LinearLayout>
