@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.registrationdemo.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_credentialFragment"
+            app:destination="@id/credentialFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ageFragment"
+        android:name="com.example.registrationdemo.AgeFragment"
+        android:label="fragment_age"
+        tools:layout="@layout/fragment_age" >
+        <action
+            android:id="@+id/action_ageFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.registrationdemo.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_credentialFragment"
+            app:destination="@id/credentialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/credentialFragment"
+        android:name="com.example.registrationdemo.CredentialFragment"
+        android:label="fragment_credential"
+        tools:layout="@layout/fragment_credential" >
+        <action
+            android:id="@+id/action_credentialFragment_to_ageFragment"
+            app:destination="@id/ageFragment" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_welcomeFragment"
+        app:destination="@id/welcomeFragment" />
+</navigation>

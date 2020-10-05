@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dayFragment">
+
+    <fragment
+        android:id="@+id/dayFragment"
+        android:name="com.example.heroapp.DayFragment"
+        android:label="fragment_day"
+        tools:layout="@layout/fragment_day" >
+        <action
+            android:id="@+id/action_dayFragment_to_heroFragment"
+            app:destination="@id/heroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/heroFragment"
+        android:name="com.example.heroapp.HeroFragment"
+        android:label="fragment_hero"
+        tools:layout="@layout/fragment_hero" >
+        <action
+            android:id="@+id/action_heroFragment_to_posterFragment"
+            app:destination="@id/posterFragment" />
+        <argument
+            android:name="daynight"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/posterFragment"
+        android:name="com.example.heroapp.PosterFragment"
+        android:label="fragment_poster"
+        tools:layout="@layout/fragment_poster" >
+    </fragment>
+    <action
+        android:id="@+id/action_global_dayFragment"
+        app:destination="@id/dayFragment" />
+    <action
+        android:id="@+id/action_global_posterFragment"
+        app:destination="@id/posterFragment" />
+</navigation>
