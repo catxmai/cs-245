@@ -7,6 +7,5 @@ data class Profile (
     var dob_date: Int,
     var dob_month: Int,
     var dob_year: Int
-
 )
 
