@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/record_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:text="record"
+        android:textSize="30dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/id_text"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="Student ID" />
+
+            <EditText
+                android:id="@+id/name_text"
+                android:layout_weight="1"
+                android:hint="Name"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/grade_text"
+                android:layout_weight="1"
+                android:hint="Grade"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Add" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/update_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Update" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Delete" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

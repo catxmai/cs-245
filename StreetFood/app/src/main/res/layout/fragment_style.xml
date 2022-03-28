@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StyleFragment">
+
+    <Button
+        android:id="@+id/american_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="american"
+        android:background="@drawable/food_american"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp" />
+
+    <Button
+        android:id="@+id/chinese_button"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="chinese"
+        android:background="@drawable/food_chinese"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"/>
+
+    <Button
+        android:id="@+id/dessert_button"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="dessert"
+        android:background="@drawable/food_dessert"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"/>
+
+    <Button
+        android:id="@+id/fastfood_button"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="fastfood"
+        android:background="@drawable/food_fastfood"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"/>
+
+    <Button
+        android:id="@+id/french_button"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="french"
+        android:background="@drawable/food_french"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"/>
+
+    <Button
+        android:id="@+id/italian_button"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="italian"
+        android:background="@drawable/food_italian"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"/>
+
+    <Button
+        android:id="@+id/japanese_button"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="japanese"
+        android:background="@drawable/food_japanese"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"/>
+
+    <Button
+        android:id="@+id/mexican_button"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="mexican"
+        android:background="@drawable/food_mexican"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"/>
+
+    <Button
+        android:id="@+id/pizza_button"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="pizza"
+        android:background="@drawable/food_pizza"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"/>
+
+    <Button
+        android:id="@+id/steakhouse_button"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="steakhouse"
+        android:background="@drawable/food_steakhouse"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"/>
+</LinearLayout>

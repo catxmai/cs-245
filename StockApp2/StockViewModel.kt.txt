@@ -1,0 +1,18 @@
+class StockViewModel : ViewModel() {
+
+    var stockList = MutableLiveData<ArrayList<Stock>>()
+    var currentStock = MutableLiveData<Stock>()
+
+    init {
+        stockList.value = ArrayList<Stock>()
+    }
+
+
+    fun setCurrentStock(stock: Stock) {//When the user click a stock in the recycler view
+
+    }
+
+    fun updateCurrentStock(share: Int) {//When the user click save button
+        currentStock.value?.share = share
+    }
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#CDDC39">
+
+        <TextView
+            android:id="@+id/stock_name"
+            android:layout_width="369dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Stock"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/share_text"
+            android:layout_width="292dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Number of shares"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/stock_name"
+            app:layout_constraintTop_toBottomOf="@+id/stock_name" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="87dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="24dp"
+            android:text="Save"
+            app:layout_constraintStart_toEndOf="@+id/share_text"
+            app:layout_constraintTop_toBottomOf="@+id/stock_name" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

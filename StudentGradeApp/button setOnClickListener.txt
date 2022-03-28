@@ -1,0 +1,21 @@
+        add_button.setOnClickListener {
+            if (id_text.text.isNotBlank() and name_text.text.isNotBlank() and grade_text.text.isNotBlank()) {
+		// Add a new record
+            }
+        }
+        update_button.setOnClickListener {
+            if (grade_text.text.isNotBlank()) {
+                if (id_text.text.isNotBlank()) {
+                    // Update the grade by ID
+                } else if (name_text.text.isNotBlank()) {
+                    // Update the grade by name
+                }
+            }
+        }
+        delete_button.setOnClickListener {
+            if (id_text.text.isNotBlank()) {
+                // Delete data by id
+            } else if (name_text.text.isNotBlank()) {
+                // Delete data by name
+            }
+        }
